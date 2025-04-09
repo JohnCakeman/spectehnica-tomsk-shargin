@@ -1,10 +1,7 @@
-
 import SocialIcons from "./SocialIcons";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white pt-12 pb-6">
+  return <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -17,15 +14,15 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 mb-2">
               <Phone size={18} className="text-secondary" />
-              <a href="tel:+71234567890" className="hover:text-secondary transition-colors">+7 (123) 456-78-90</a>
+              <a href="tel:+71234567890" className="hover:text-secondary transition-colors">+7 (923) 406-78-90</a>
             </div>
             <div className="flex items-center gap-2 mb-2">
               <Mail size={18} className="text-secondary" />
-              <a href="mailto:info@spectehnika.ru" className="hover:text-secondary transition-colors">info@spectehnika.ru</a>
+              <a href="mailto:info@spectehnika.ru" className="hover:text-secondary transition-colors">n.shargin@mail.ru</a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={18} className="text-secondary" />
-              <span>г. Томск, ул. Строительная, д. 10</span>
+              <span>г. Томск, ул. Водяная, д. 10</span>
             </div>
           </div>
           
@@ -63,9 +60,7 @@ const Footer = () => {
               <span className="text-white">Работаем круглосуточно</span>
             </div>
             <div className="p-3 bg-secondary/20 rounded-lg mt-4">
-              <p className="font-bold text-white">
-                Звоните! Простой техники стоит вам денег: +7 (123) 456-78-90
-              </p>
+              <p className="font-bold text-white">Звоните! Простой техники стоит вам денег: +7 (923) 406-78-90</p>
             </div>
           </div>
         </div>
@@ -86,8 +81,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
