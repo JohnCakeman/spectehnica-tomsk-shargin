@@ -36,8 +36,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <h3 className="text-2xl font-bold text-center mb-6">Получить расчет за 5 минут</h3>
+    <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+      <h3 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Получить расчет за 5 минут</h3>
       
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -50,6 +50,7 @@ const ContactForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            className="w-full"
           />
         </div>
         
@@ -64,11 +65,11 @@ const ContactForm = () => {
             onChange={(e) => setPhone(e.target.value)}
             required
             type="tel"
-            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+            className="w-full"
           />
         </div>
         
-        <div className="mb-6">
+        <div className="mb-5">
           <label htmlFor="comment" className="block text-gray-700 mb-2">
             Опишите задачу
           </label>
@@ -77,7 +78,8 @@ const ContactForm = () => {
             placeholder="Какая техника нужна, адрес, сроки..."
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            rows={4}
+            rows={3}
+            className="w-full"
           />
         </div>
         
@@ -97,26 +99,26 @@ const ContactForm = () => {
         </Button>
       </form>
       
-      <div className="mt-6 text-center">
-        <p className="text-gray-500 text-sm mb-4">Или напишите нам напрямую:</p>
+      <div className="mt-5 text-center">
+        <p className="text-gray-500 text-sm mb-3">Или напишите нам напрямую:</p>
         <div className="flex justify-center space-x-4">
           <a 
             href="https://t.me/your_username" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-[#0088cc] hover:underline"
+            className="flex items-center gap-1.5 text-[#0088cc] hover:underline"
           >
-            <Send size={18} />
-            <span>Telegram</span>
+            <Send size={16} />
+            <span className="text-sm">Telegram</span>
           </a>
           <a 
             href="https://wa.me/1234567890" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-[#25D366] hover:underline"
+            className="flex items-center gap-1.5 text-[#25D366] hover:underline"
           >
-            <MessageCircle size={18} />
-            <span>WhatsApp</span>
+            <MessageCircle size={16} />
+            <span className="text-sm">WhatsApp</span>
           </a>
         </div>
       </div>

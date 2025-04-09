@@ -1,7 +1,9 @@
 
 import { useState, useEffect } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const DiscountTimer = () => {
+  const isMobile = useIsMobile();
   const [timeLeft, setTimeLeft] = useState({
     hours: 23,
     minutes: 59,
@@ -56,18 +58,18 @@ const DiscountTimer = () => {
   return (
     <div className="bg-secondary/90 text-white p-3 rounded-lg shadow-lg animate-pulse-soft">
       <div className="text-center">
-        <p className="font-bold mb-2">Скидка 10% при заказе через сайт!</p>
+        <p className="font-bold mb-2 text-sm sm:text-base">Скидка 10% при заказе через сайт!</p>
         <div className="flex justify-center gap-2">
-          <div className="bg-black/20 px-3 py-1 rounded">
-            <span className="font-mono text-xl">{timeLeft.hours.toString().padStart(2, '0')}</span>
+          <div className="bg-black/20 px-2 sm:px-3 py-1 rounded">
+            <span className="font-mono text-lg sm:text-xl">{timeLeft.hours.toString().padStart(2, '0')}</span>
             <span className="text-xs">ч</span>
           </div>
-          <div className="bg-black/20 px-3 py-1 rounded">
-            <span className="font-mono text-xl">{timeLeft.minutes.toString().padStart(2, '0')}</span>
+          <div className="bg-black/20 px-2 sm:px-3 py-1 rounded">
+            <span className="font-mono text-lg sm:text-xl">{timeLeft.minutes.toString().padStart(2, '0')}</span>
             <span className="text-xs">м</span>
           </div>
-          <div className="bg-black/20 px-3 py-1 rounded">
-            <span className="font-mono text-xl">{timeLeft.seconds.toString().padStart(2, '0')}</span>
+          <div className="bg-black/20 px-2 sm:px-3 py-1 rounded">
+            <span className="font-mono text-lg sm:text-xl">{timeLeft.seconds.toString().padStart(2, '0')}</span>
             <span className="text-xs">с</span>
           </div>
         </div>
