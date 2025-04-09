@@ -1,9 +1,10 @@
+
 import DiscountTimer from "./DiscountTimer";
 const Hero = () => {
   return <div className="relative bg-gray-900 text-white overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"
+      backgroundImage: "url('https://images.unsplash.com/photo-1595758376050-d0679ec72ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"
     }}></div>
       
       {/* Content */}
