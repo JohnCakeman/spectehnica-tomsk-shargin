@@ -26,7 +26,7 @@ const Header = () => {
               <SocialIcons />
               <div className="hidden md:flex items-center gap-2 bg-primary/10 p-2 rounded-lg">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+71234567890" className="text-primary font-medium">+7 (901) 406-78-90</a>
+                <a href="tel:+71234567890" className="text-primary font-medium">+7 (923) 406-78-90</a>
               </div>
             </div>
           </> : <>
