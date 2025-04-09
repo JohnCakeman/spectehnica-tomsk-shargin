@@ -56,7 +56,7 @@ const Header = () => {
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-2">
                         <Phone size={18} className="text-primary" />
-                        <a href="tel:+71234567890" className="text-primary font-medium">+7 (901) 406-78-90</a>
+                        <a href="tel:+71234567890" className="text-primary font-medium">+7 (923) 406-78-90</a>
                       </div>
                       <div className="mt-2">
                         <SocialIcons />
