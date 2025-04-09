@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-secondary">Техника</span>
             </h3>
             <p className="mb-4 text-gray-400">
-              Аренда спецтехники для строительства и логистики. Выезжаем 24/7 по Москве и области.
+              Аренда спецтехники для строительства и логистики. Выезжаем 24/7 по Томску и области.
             </p>
             <div className="flex items-center gap-2 mb-2">
               <Phone size={18} className="text-secondary" />
@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={18} className="text-secondary" />
-              <span>г. Москва, ул. Строительная, д. 10</span>
+              <span>г. Томск, ул. Строительная, д. 10</span>
             </div>
           </div>
           

@@ -107,25 +107,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
-        {/* Map Section */}
-        <section className="py-8">
-          <div className="container mx-auto px-4">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.397087990124!2d37.618675376442356!3d55.751349986961515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1617977498159!5m2!1sru!2sru"
-                  width="100%"
-                  height="450"
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading="lazy"
-                  title="Карта"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

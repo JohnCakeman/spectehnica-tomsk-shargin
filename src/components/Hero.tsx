@@ -1,4 +1,6 @@
+
 import DiscountTimer from "./DiscountTimer";
+
 const Hero = () => {
   return <div className="relative bg-gray-900 text-white overflow-hidden">
       {/* Background Image with Overlay */}
