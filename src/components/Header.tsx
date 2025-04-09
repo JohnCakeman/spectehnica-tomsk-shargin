@@ -1,16 +1,12 @@
-
 import { useState } from "react";
 import SocialIcons from "./SocialIcons";
 import { Phone, Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
 const Header = () => {
   const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
-    <header className="bg-white shadow-md py-4 sticky top-0 z-50">
+  return <header className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="font-bold text-xl md:text-2xl text-primary">
@@ -19,8 +15,7 @@ const Header = () => {
           </h1>
         </div>
         
-        {!isMobile ? (
-          <>
+        {!isMobile ? <>
             <div className="hidden md:flex items-center gap-6">
               <a href="#equipment" className="text-gray-700 hover:text-primary transition-colors">Техника</a>
               <a href="#testimonials" className="text-gray-700 hover:text-primary transition-colors">Отзывы</a>
@@ -31,12 +26,10 @@ const Header = () => {
               <SocialIcons />
               <div className="hidden md:flex items-center gap-2 bg-primary/10 p-2 rounded-lg">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+71234567890" className="text-primary font-medium">+7 (123) 456-78-90</a>
+                <a href="tel:+71234567890" className="text-primary font-medium">+7 (901) 406-78-90</a>
               </div>
             </div>
-          </>
-        ) : (
-          <>
+          </> : <>
             <a href="tel:+71234567890" className="md:hidden flex items-center gap-1 bg-primary/10 p-2 rounded-lg">
               <Phone size={18} className="text-primary" />
             </a>
@@ -73,11 +66,8 @@ const Header = () => {
                 </div>
               </SheetContent>
             </Sheet>
-          </>
-        )}
+          </>}
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
