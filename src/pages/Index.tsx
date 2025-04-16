@@ -11,7 +11,7 @@ const Index = () => {
   const equipmentData = [
     {
       title: "Hyundai Gold",
-      image: "public/lovable-uploads/106ada98-c76c-4a3e-8b92-4b675b823fad.png",
+      image: "/lovable-uploads/106ada98-c76c-4a3e-8b92-4b675b823fad.png",
       description: "Перевезем бетонные блоки, контейнеры, оборудование. Работаем в труднодоступных местах.",
       specs: [
         "Грузоподъемность 11т", 
@@ -23,7 +23,7 @@ const Index = () => {
     },
     {
       title: "Mitsubishi Fuso",
-      image: "public/lovable-uploads/b4c8fb97-4140-420b-84d2-788a53817709.png",
+      image: "/lovable-uploads/b4c8fb97-4140-420b-84d2-788a53817709.png",
       description: "Идеален для малого бизнеса: доставка стройматериалов, разгрузка фур.",
       specs: [
         "Грузоподъемность 3т", 
@@ -34,7 +34,7 @@ const Index = () => {
     },
     {
       title: "Экскаватор-погрузчик",
-      image: "public/lovable-uploads/14f4173b-c16d-4271-9447-bd7e76a48318.png",
+      image: "/lovable-uploads/14f4173b-c16d-4271-9447-bd7e76a48318.png",
       description: "Выкопаем септик, расчистим снег, подготовим участок под стройку.",
       specs: [
         "Ковш 1м³", 
