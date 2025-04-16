@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
@@ -30,13 +29,6 @@ const testimonials: Testimonial[] = [
     name: "ООО \"СтройГрад\"",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     text: "Регулярно заказываем манипулятор для доставки кирпича. Надежные водители!"
-  },
-  {
-    id: 4,
-    name: "Михаил",
-    company: "ИП Белов",
-    image: "https://randomuser.me/api/portraits/men/54.jpg",
-    text: "Арендовали технику на месяц для стройки загородного дома. Всегда вовремя, отлично работает!"
   },
   {
     id: 5,
@@ -71,7 +63,6 @@ const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayCount, setDisplayCount] = useState(3);
   
-  // Update display count based on screen width
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
