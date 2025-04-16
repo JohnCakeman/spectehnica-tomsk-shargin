@@ -4,11 +4,18 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 const DiscountTimer = () => {
   const isMobile = useIsMobile();
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 23,
-    minutes: 59,
-    seconds: 59
-  });
+  
+  // Generate random initial time between 2 and 22 hours
+  const getRandomInitialTime = () => {
+    const hours = Math.floor(Math.random() * (22 - 2 + 1)) + 2; // Random between 2 and 22
+    return {
+      hours,
+      minutes: Math.floor(Math.random() * 60),
+      seconds: Math.floor(Math.random() * 60)
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(getRandomInitialTime());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -22,12 +29,8 @@ const DiscountTimer = () => {
             const newHours = prevTime.hours - 1;
             
             if (newHours < 0) {
-              // Reset to 23:59:59 when timer reaches zero
-              return {
-                hours: 23,
-                minutes: 59,
-                seconds: 59
-              };
+              // Reset with a new random time when timer reaches zero
+              return getRandomInitialTime();
             }
             
             return {
